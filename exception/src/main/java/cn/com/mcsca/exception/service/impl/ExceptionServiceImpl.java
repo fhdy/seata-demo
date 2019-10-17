@@ -14,6 +14,9 @@ import java.util.Map;
 
 @RestController
 public class ExceptionServiceImpl implements ExceptionService {
+    /**
+     * 刻使用redis代替存储
+     */
     Map<String, ExceptionEntity> temp = new HashMap();
     Logger logger = LoggerFactory.getLogger(ExceptionServiceImpl.class);
 
