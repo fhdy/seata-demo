@@ -2,7 +2,6 @@ package com.sly.seata.business.service.impl;
 
 import cn.com.mcsca.exception.service.ExceptionService;
 import com.sly.seata.account.service.AccountService;
-import com.sly.seata.account.service.u.UAccountService;
 import com.sly.seata.business.service.BusinessService;
 import com.sly.seata.common.model.account.Account;
 import com.sly.seata.common.model.order.Order;
@@ -41,9 +40,6 @@ public class BusinessServiceImpl implements BusinessService {
 	private OrderService orderService;
 	@Autowired
 	private StorageService storageService;
-	@Autowired
-	private UAccountService uAccountService;
-
 	@Autowired
 	private ExceptionService exceptionService;
 

@@ -1,4 +1,4 @@
-package com.sly.seata.account.advice;
+package com.sly.seata.advice;
 
 import org.springframework.core.MethodParameter;
 import org.springframework.http.MediaType;
@@ -6,7 +6,7 @@ import org.springframework.http.server.ServerHttpRequest;
 import org.springframework.http.server.ServerHttpResponse;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.servlet.mvc.method.annotation.ResponseBodyAdvice;
- 
+
 /**
  * 拦截Controller方法默认返回参数，统一处理返回值/响应体
  *

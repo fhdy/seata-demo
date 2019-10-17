@@ -28,6 +28,10 @@ public class RequestHeaderInterceptor implements RequestInterceptor {
 
 	@Override
 	public void apply(RequestTemplate template) {
+		String url = template.url();
+		if("/exception/getExceptionById".equalsIgnoreCase(url) || "/exception/saveException".equalsIgnoreCase(url)){
+			return;
+		}
 		String xid = RootContext.getXID();
 		if (StringUtils.isNotBlank(xid)) {
 			template.header(SeataConstant.XID_HEADER, xid);
