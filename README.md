@@ -9,7 +9,8 @@ springboot + springcloud + feign + seata + mybatis + mysql
 
 > web层为：seata-springcloud-web  
 > 业务层为：seata-springcloud-business  
-> 基础服务层： seata-springcloud-account、seata-springcloud-order、seata-springcloud-storage  
+> 基础服务层： seata-springcloud-account、seata-springcloud-order、seata-springcloud-storage、exception
+> 其中exception针对每个服务的异常进行处理，引入exception-api即可
 
 # 数据库
 ```sql
