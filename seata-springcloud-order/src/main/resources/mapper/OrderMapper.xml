@@ -6,4 +6,12 @@
 		INSERT INTO `BUSINESS_ORDER`(orderId,orderNo,orderDetail,createTime,logicDel,remark)
 		VALUES(#{orderId},#{orderNo},#{orderDetail},#{createTime},#{logicDel},#{remark})
 	</insert>
+
+	<update id="update">
+		update `BUSINESS_ORDER` set remark = '更新备注' where orderId='1'
+	</update>
+
+	<delete id="delete">
+		delete from `BUSINESS_ORDER` where orderId='1'
+	</delete>
 </mapper>

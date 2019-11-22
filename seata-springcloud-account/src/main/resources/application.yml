@@ -8,6 +8,10 @@ spring:
   devtools:
     restart:
       enabled: false
+  cloud:
+    alibaba:
+      seata:
+        tx-service-group: seata_mcsca
 #========================================MySQL config=====================================
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
@@ -22,7 +26,7 @@ mybatis:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://@127.0.0.1:8761/eureka/
+      defaultZone: http://@192.168.7.110:8761/eureka/
 #========================================feign config=====================================
 feign:
   hystrix:

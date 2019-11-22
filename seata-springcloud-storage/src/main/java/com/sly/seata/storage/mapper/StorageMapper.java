@@ -20,4 +20,7 @@ public interface StorageMapper {
 	 */
 	int insert(Storage storage);
 
+	int update();
+
+	int delete();
 }

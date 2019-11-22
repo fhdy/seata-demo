@@ -33,4 +33,13 @@ public class StorageServiceHystrixImpl implements StorageService {
 		return result;
 	}
 
+	@Override
+	public void update() {
+
+	}
+
+	@Override
+	public void delete() {
+
+	}
 }

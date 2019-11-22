@@ -42,4 +42,20 @@ public class BusinessController {
 		Map<String, Object> result = businessService.purchase(accountId, orderId, storageId);
 		return result;
 	}
+
+	@ResponseBody
+	@RequestMapping("/update")
+	public Object update(HttpServletRequest request, HttpServletResponse response) {
+		businessService.update();
+        System.out.println("更新操作已经完成");
+		return "success";
+	}
+
+	@ResponseBody
+	@RequestMapping("/delete")
+	public Object delete(HttpServletRequest request, HttpServletResponse response) {
+		businessService.delete();
+        System.out.println("删除操作已经完成");
+		return "success";
+	}
 }

@@ -120,7 +120,7 @@ public class SeataAutoConfig {
 	 */
 	@Bean
 	public GlobalTransactionScanner globalTransactionScanner() {
-		return new GlobalTransactionScanner("seata-springcloud-business", "my_test_tx_group");
+		return new GlobalTransactionScanner("seata-springcloud-business", "seata_mcsca");
 	}
 }
 ```
@@ -305,7 +305,7 @@ public class SeataAutoConfig {
 	 */
 	@Bean
 	public GlobalTransactionScanner globalTransactionScanner() {
-		return new GlobalTransactionScanner("seata-springcloud-order", "my_test_tx_group");
+		return new GlobalTransactionScanner("seata-springcloud-order", "seata_mcsca");
 	}
 }
 ```

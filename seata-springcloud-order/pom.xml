@@ -18,6 +18,21 @@
 			<artifactId>seata-springcloud-order-api</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
+		<dependency>
+			<groupId>com.sly</groupId>
+			<artifactId>seata-springcloud-account-api</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>com.sly</groupId>
+			<artifactId>seata-springcloud-storage-api</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>cn.com.mcsca.exception</groupId>
+			<artifactId>exception-api</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
 		
 		<!-- 服务调用相关 -->
 		<dependency>
@@ -55,13 +70,6 @@
 			<artifactId>mysql-connector-java</artifactId>
 			<scope>runtime</scope>
 		</dependency>
-		
-		<!-- seata -->
-		<dependency>
-            <groupId>io.seata</groupId>
-            <artifactId>seata-all</artifactId>
-            <version>0.6.1</version>
-        </dependency>
 		
 		<!-- 测试开发相关 -->
 		<dependency>

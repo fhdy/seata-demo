@@ -66,13 +66,6 @@
 			<version>2.0.1</version>
 		</dependency>
 		
-		<!-- seata -->
-		<dependency>
-            <groupId>io.seata</groupId>
-            <artifactId>seata-all</artifactId>
-            <version>0.6.1</version>
-        </dependency>
-		
 		<!-- 测试开发相关 -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>

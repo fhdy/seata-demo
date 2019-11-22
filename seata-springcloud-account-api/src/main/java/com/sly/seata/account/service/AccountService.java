@@ -31,6 +31,9 @@ public interface AccountService {
 	@RequestMapping(value = "/account/insert", method = RequestMethod.POST)
 	Map<String, Object> insert(@RequestBody Account account) throws Exception;
 
-	@RequestMapping(value = "/account/insert1", method = RequestMethod.POST)
-	List insert1(@RequestBody Account account) throws Exception;
+	@RequestMapping(value = "/account/update", method = RequestMethod.POST)
+	void update();
+
+	@RequestMapping(value = "/account/delete", method = RequestMethod.POST)
+	void delete();
 }

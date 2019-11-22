@@ -38,7 +38,7 @@ public class AccountServiceImpl implements AccountService {
 	public Map<String, Object> insert(Account account) throws Exception{
 		System.out.println(RootContext.getXID());
 		accountMapper.insert(account);
-//		int a = 1/0;
+		int a = 1/0;
 		Map<String, Object> result = new HashMap<>(16);
 		result.put("status", 200);
 		result.put("message", "新增成功！");
@@ -46,8 +46,12 @@ public class AccountServiceImpl implements AccountService {
 	}
 
 	@Override
-	public List insert1(Account account) throws Exception {
-		int a = 1/0;
-		return new ArrayList();
+	public void update() {
+		accountMapper.update();
+	}
+
+	@Override
+	public void delete() {
+		accountMapper.delete();
 	}
 }

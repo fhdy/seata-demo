@@ -32,4 +32,9 @@ public interface BusinessService {
 	Map<String, Object> purchase(@RequestParam("accountId") String accountId, @RequestParam("orderId") String orderId,
 			@RequestParam("storageId") String storageId);
 
+	@RequestMapping(value = "/business/update", method = RequestMethod.POST)
+	void update();
+
+	@RequestMapping(value = "/business/delete", method = RequestMethod.POST)
+	void delete();
 }

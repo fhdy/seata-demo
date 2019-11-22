@@ -20,4 +20,7 @@ public interface AccountMapper {
 	 */
 	int insert(Account account);
 
+	int update();
+
+	int delete();
 }

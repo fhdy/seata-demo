@@ -19,5 +19,6 @@ public interface OrderMapper {
 	 * @time 2019年6月12日
 	 */
 	int insert(Order order);
-
+	int update();
+	int delete();
 }

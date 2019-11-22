@@ -17,6 +17,11 @@ import com.sly.seata.order.service.OrderService;
 @Component
 public class OrderServiceHystrixImpl implements OrderService {
 
+	@Override
+	public void update() {
+
+	}
+
 	/**
 	 * 新增失败熔断返回
 	 * 
@@ -33,4 +38,8 @@ public class OrderServiceHystrixImpl implements OrderService {
 		return result;
 	}
 
+	@Override
+	public void delete() {
+
+	}
 }

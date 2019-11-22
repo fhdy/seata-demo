@@ -34,4 +34,13 @@ public class BusinessServiceHystrixImpl implements BusinessService {
 		return result;
 	}
 
+	@Override
+	public void update() {
+
+	}
+
+	@Override
+	public void delete() {
+
+	}
 }

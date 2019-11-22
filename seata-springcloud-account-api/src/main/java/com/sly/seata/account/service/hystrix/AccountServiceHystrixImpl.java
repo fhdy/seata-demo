@@ -1,18 +1,13 @@
 package com.sly.seata.account.service.hystrix;
 
+import com.sly.seata.account.service.AccountService;
+import com.sly.seata.common.model.account.Account;
+import org.springframework.stereotype.Component;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-
-import com.sly.seata.account.service.test.ParamLog;
-import com.sly.seata.common.context.ExceptionMsgContext;
-import com.sly.seata.common.exception.ExceptionHandler;
-import io.seata.core.context.RootContext;
-import org.springframework.stereotype.Component;
-
-import com.sly.seata.account.service.AccountService;
-import com.sly.seata.common.model.account.Account;
 
 /**
  * Account熔断
@@ -40,8 +35,11 @@ public class AccountServiceHystrixImpl implements AccountService {
 	}
 
 	@Override
-	public List insert1(Account account) throws Exception {
-		return new ArrayList();
+	public void update() {
 	}
 
+	@Override
+	public void delete() {
+
+	}
 }

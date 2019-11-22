@@ -111,6 +111,6 @@ public class SeataAutoConfig {
 	 */
 	@Bean
 	public GlobalTransactionScanner globalTransactionScanner() {
-		return new GlobalTransactionScanner("seata-springcloud-storage", "my_test_tx_group");
+		return new GlobalTransactionScanner("seata-springcloud-storage", "seata_mcsca");
 	}
 }

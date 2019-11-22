@@ -8,6 +8,10 @@ spring:
   devtools:
     restart:
       enabled: false
+  cloud:
+    alibaba:
+      seata:
+        tx-service-group: seata_mcsca
 #  main:
 #    allow-bean-definition-overriding: true
 #========================================feign config=====================================
@@ -32,5 +36,5 @@ hystrix:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://@127.0.0.1:8761/eureka/
+      defaultZone: http://@192.168.7.110:8761/eureka/
 

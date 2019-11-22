@@ -11,6 +11,7 @@ import com.sly.seata.common.utils.DateUtils;
 import com.sly.seata.order.service.OrderService;
 import com.sly.seata.storage.service.StorageService;
 import io.seata.core.context.RootContext;
+import io.seata.spring.annotation.GlobalLock;
 import io.seata.spring.annotation.GlobalTransactional;
 import org.apache.commons.lang3.exception.ExceptionUtils;
 import org.slf4j.Logger;
@@ -113,4 +114,19 @@ public class BusinessServiceImpl implements BusinessService {
 		}
 	}
 
+	@Override
+	@GlobalTransactional
+	public void update() {
+		accountService.update();
+		storageService.update();
+		orderService.update();
+	}
+
+	@Override
+	@GlobalTransactional
+	public void delete() {
+		accountService.delete();
+		storageService.delete();
+		orderService.delete();
+	}
 }

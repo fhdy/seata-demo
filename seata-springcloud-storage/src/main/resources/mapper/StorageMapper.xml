@@ -6,4 +6,12 @@
 		INSERT INTO `BUSINESS_STORAGE`(storageId,storageName,storageCount,logicDel,remark)
 		VALUES(#{storageId},#{storageName},#{storageCount},#{logicDel},#{remark})
 	</insert>
+
+	<update id="update">
+		update `BUSINESS_STORAGE` set remark = '更新备注' where storageId='1'
+	</update>
+
+	<delete id="delete">
+		delete from `BUSINESS_STORAGE` where storageId='1'
+	</delete>
 </mapper>

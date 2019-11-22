@@ -39,11 +39,6 @@
 			<artifactId>exception-api</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
-		<dependency>
-			<groupId>cn.com.mcsca.exception.base</groupId>
-			<artifactId>mcsca-exception-base</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
-		</dependency>
 
 	
 		<!-- 服务调用相关 -->
@@ -65,13 +60,6 @@
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-openfeign</artifactId>
 		</dependency>
-		
-		<!-- seata -->
-		<dependency>
-            <groupId>io.seata</groupId>
-            <artifactId>seata-all</artifactId>
-            <version>0.6.1</version>
-        </dependency>
 
 		<!-- 测试开发相关 -->
 		<dependency>

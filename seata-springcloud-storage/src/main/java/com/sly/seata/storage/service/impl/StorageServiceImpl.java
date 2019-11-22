@@ -40,13 +40,23 @@ public class StorageServiceImpl implements StorageService {
 //		int a = 10/0;
 		storageMapper.insert(storage);
 
-		if(true){
-			throw new BusinessException("customCode","customException");
-		}
+//		if(true){
+//			throw new BusinessException("customCode","customException");
+//		}
 		
 		Map<String, Object> result = new HashMap<>(16);
 		result.put("status", 200);
 		result.put("message", "新增成功！");
 		return result;
+	}
+
+	@Override
+	public void update() {
+		storageMapper.update();
+	}
+
+	@Override
+	public void delete() {
+		storageMapper.delete();
 	}
 }

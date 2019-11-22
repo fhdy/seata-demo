@@ -6,4 +6,12 @@
 		INSERT INTO `BUSINESS_ACCOUNT`(accountId,amount,accountName,logicDel,remark)
 		VALUES(#{accountId},#{amount},#{accountName},#{logicDel},#{remark})
 	</insert>
+
+	<update id="update">
+		update `BUSINESS_ACCOUNT` set remark = '更新备注' where accountId='1'
+	</update>
+
+	<delete id="delete">
+		delete from `BUSINESS_ACCOUNT` where accountId='1'
+	</delete>
 </mapper>

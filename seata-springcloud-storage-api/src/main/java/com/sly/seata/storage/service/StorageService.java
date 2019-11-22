@@ -30,4 +30,9 @@ public interface StorageService {
 	@RequestMapping(value = "/storage/insert", method = RequestMethod.POST)
 	Map<String, Object> insert(@RequestBody Storage storage);
 
+	@RequestMapping(value = "/storage/update", method = RequestMethod.POST)
+	void update();
+
+	@RequestMapping(value = "/storage/delete", method = RequestMethod.POST)
+	void delete();
 }

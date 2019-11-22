@@ -30,4 +30,9 @@ public interface OrderService {
 	@RequestMapping(value = "/order/insert", method = RequestMethod.POST)
 	Map<String, Object> insert(@RequestBody Order order);
 
+	@RequestMapping(value = "/order/update", method = RequestMethod.POST)
+	void update();
+
+	@RequestMapping(value = "/order/delete", method = RequestMethod.POST)
+	void delete();
 }
